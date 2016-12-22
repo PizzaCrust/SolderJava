@@ -26,7 +26,7 @@ public class ModpackAPIHandler implements HttpHandler {
                 String slug = parameters[1];
                 for (String registeredSlug : Main.MODPACK_DATABASE.modpacksOnDatabase.keySet()) {
                     if (registeredSlug.equals(slug)) {
-                        ModpackInfo info = ModpackInfo.fromfile(registeredSlug);
+                        ModpackInfo info = ModpackInfo.fromfile(registeredSlug + ".json");
                         String response = new Gson().toJson(info);
                         httpRequest.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
                         OutputStream body = httpRequest.getResponseBody();
