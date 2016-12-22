@@ -19,6 +19,7 @@ public class Main {
     public static ModpacksInfo MODPACK_DATABASE;
 
     public static void main(String... args) throws Exception {
+        int port = Integer.parseInt(args[0]);
         File configFile = new File(System.getProperty("user.dir"), "config.json");
         File mirrorFile = new File(System.getProperty("user.dir"), "mirror");
         if (!configFile.exists()) {
@@ -34,7 +35,7 @@ public class Main {
         MODPACK_DATABASE = new ModpacksInfo(CONFIGURATION.registeredModpacks, CONFIGURATION
                 .rootURL + "/mirror/");
         System.out.println("Server is starting...");
-        HttpServer server = HttpServer.create(new InetSocketAddress(80), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/api", new EntryAPIHandler());
         server.createContext("/api/modpack", new ModpackAPIHandler());
         server.createContext("/test", new TestHandler());
