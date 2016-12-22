@@ -1,0 +1,19 @@
+{
+  "minecraft":"1.5.1",
+  "minecraft_md5":"5c1219d869b87d233de3033688ec7567",
+  "forge":null,
+  "mods":[
+    {
+      "name":"basemods",
+      "version":"tekkitmain-v1.0.2",
+      "md5":"842658e9a8a03c1210d563be1b7d09f5",
+      "url":"http:\/\/mirror.technicpack.net\/Technic\/mods\/basemods\/basemods-tekkitmain-v1.0.2.zip"
+    },
+    {
+      "name":"balkonsweaponmod",
+      "version":"v1.11",
+      "md5":"016bb3edb2fa11c7212fd4cf2504e260",
+      "url":"http:\/\/mirror.technicpack.net\/Technic\/mods\/balkonsweaponmod\/balkonsweaponmod-v1.11.zip"
+    }
+  ]
+}

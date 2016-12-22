@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "display_name": "The Test Modpack",
+  "url": null,
+  "icon": null,
+  "icon_md5": null,
+  "logo": null,
+  "logo_md5": null,
+  "background": null,
+  "background_md5": null,
+  "recommended": "1.0",
+  "latest": "1.0",
+  "builds": [
+    "1.0"
+  ]
+}
