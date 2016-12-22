@@ -36,7 +36,7 @@ public class Main {
         System.out.println("Server is starting...");
         HttpServer server = HttpServer.create(new InetSocketAddress(80), 0);
         server.createContext("/api", new EntryAPIHandler());
-        server.createContext("/api/modpack", new ModpackAllAPIHandler());
+        server.createContext("/api/modpack", new ModpackAPIHandler());
         server.createContext("/test", new TestHandler());
         server.setExecutor(null);
         server.start();
