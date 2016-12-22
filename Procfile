@@ -1,1 +1,1 @@
-web: java -jar target\SolderJava-1.0-SNAPSHOT-shaded.jar
+web: java -jar target\SolderJava-1.0-SNAPSHOT-shaded.jar $PORT
