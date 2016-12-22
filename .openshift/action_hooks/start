@@ -1,0 +1,4 @@
+#!/bin/bash
+cd app-root
+cd repo
+java -jar application.jar
